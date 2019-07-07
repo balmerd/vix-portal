@@ -16,8 +16,6 @@ import { LoginComponent } from './components/pages/account/login/login.component
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AlertComponent } from './components/alert/alert.component';
 
-import { AlertService } from 'src/app/services/alert.service';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +36,7 @@ import { AlertService } from 'src/app/services/alert.service';
     BrowserAnimationsModule,
     VixMaterialModule
   ],
-  providers: [AlertService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

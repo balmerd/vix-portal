@@ -25,15 +25,11 @@ export class AlertService {
   }
 
   success(message: string, keepAfterNavigationChange = false) {
-    console.log('alert service got success message:', message);
-
     this.keepAfterNavigationChange = keepAfterNavigationChange;
     this.subject.next({ type: 'success', text: message });
   }
 
   error(message: string, keepAfterNavigationChange = false) {
-    console.log('alert service got error message:', message);
-
     this.keepAfterNavigationChange = keepAfterNavigationChange;
     this.subject.next({ type: 'error', text: message });
   }
