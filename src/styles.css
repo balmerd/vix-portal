@@ -4,42 +4,22 @@
   padding: 0;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.4;
-}
-body.overlay {
-  background-color: silver;
-  z-index: -1;
-}
-
-a {
-  color: #333;
-  text-decoration: none;
-}
-
-.container {
-  padding: 0 1rem;
-}
-
-.btn {
-  display: inline-block;
-  border: none;
-  background: #555;
-  color: #fff;
-  padding: 7px 20px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: #666;
-}
-
 html,
 body {
   height: 100%;
 }
 body {
-  margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  line-height: 1.4;
+}
+
+body.overlay {
+  background-color: silver;
+  z-index: -1;
+}
+
+/* material overrides */
+
+.mat-card-header-text {
+  margin: 0 !important; /* override 16px left/right margin */
 }

@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   login(): void {
     if (this.username === 'admin' && this.password === 'admin') {
-      this.router.navigate(['about']);
+      this.router.navigate(['']);
     } else {
       // this did nothing until <app-alert></app-alert> was included in login.component.html
       // TODO: need to make alert global, not specific to login page
