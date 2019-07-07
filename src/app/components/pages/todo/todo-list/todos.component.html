@@ -9,8 +9,10 @@
         </mat-checkbox>
       </p>
     </div>
+    <!-- use trackBy option on *ngFor -->
+    <!-- https://angular-checklist.io/default/checklist/performance/ZfxFUd -->
     <app-todo-item 
-      *ngFor="let todo of todos" 
+      *ngFor="let todo of todos; trackBy: id" 
       [todo]="todo"
       (deleteTodo)="deleteTodo($event)">
     </app-todo-item>

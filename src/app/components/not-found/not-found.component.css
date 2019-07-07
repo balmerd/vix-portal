@@ -1,0 +1,13 @@
+.not-found {
+  color: #404;
+  padding-top: 2rem;
+}
+.not-found p {
+  text-align: center;
+}
+.not-found p:first-child {
+  font-size: 10rem;
+}
+.not-found p:last-child {
+  font-size: 2rem;
+}
