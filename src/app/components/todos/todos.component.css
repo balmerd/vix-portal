@@ -1,0 +1,6 @@
+.todo-list {
+  background: #f4f4f4;
+}
+.button-offset {
+  padding-left: 40px; /* same as .mat-icon-button width */
+}

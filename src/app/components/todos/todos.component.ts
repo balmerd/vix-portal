@@ -10,6 +10,7 @@ import { Todo } from '../../models/Todo';
 })
 export class TodosComponent implements OnInit {
   todos:Todo[];
+  allCompleted:boolean = false;
 
   constructor(private todoService:TodoService) { }
 
@@ -18,6 +19,11 @@ export class TodosComponent implements OnInit {
       this.todos = todos;
       console.log(todos);
     });
+  }
+
+  onToggleAll() {
+    this.allCompleted = !this.allCompleted;
+    this.todos.map(t => t.completed = this.allCompleted);
   }
 
   deleteTodo(todo:Todo) {
