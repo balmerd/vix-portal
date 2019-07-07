@@ -14,6 +14,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VixMaterialModule } from './material/vix-material-module';
 import { LoginComponent } from './components/pages/account/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { AlertComponent } from './components/alert/alert.component';
+
+import { AlertService } from 'src/app/services/alert.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     AddTodoComponent,
     AboutComponent,
     LoginComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     BrowserAnimationsModule,
     VixMaterialModule
   ],
-  providers: [],
+  providers: [AlertService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

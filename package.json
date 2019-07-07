@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "format": "prettier --config ./.prettierrc  --write \"./**/*.{js,jsx,json}\""
+    "format": "prettier --config ./.prettierrc  --write \"./**/*.{ts,json}\""
   },
   "private": true,
   "dependencies": {
@@ -23,6 +23,7 @@
     "@angular/platform-browser-dynamic": "^8.1.0",
     "@angular/router": "^8.1.0",
     "core-js": "^3.1.4",
+    "hammerjs": "^2.0.8",
     "rxjs": "~6.5.2",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
