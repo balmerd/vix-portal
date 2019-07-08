@@ -1,4 +1,4 @@
-<div>
+<div id="login-page">
   <app-alert></app-alert>
   <mat-card class="login-card" role="login">
     <mat-card-header aria-hidden="true">
@@ -10,35 +10,26 @@
           <tr>
             <td>
               <mat-form-field>
-                <input
-                  matInput
-                  placeholder="Username"
-                  [(ngModel)]="username"
-                  name="username"
-                  required
-                />
+                <input matInput appAutoFocus placeholder="Username" [(ngModel)]="username" name="username" required />
               </mat-form-field>
             </td>
           </tr>
           <tr>
             <td>
               <mat-form-field>
-                <input
-                  matInput
-                  placeholder="Password"
-                  [(ngModel)]="password"
-                  type="password"
-                  name="password"
-                  required
-                />
+                <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password"
+                  required />
               </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a routerLink="/account/forgot-password" tabindex="-1">forgot password</a>
             </td>
           </tr>
         </table>
       </form>
-      <mat-spinner
-        [style.display]="showSpinner ? 'block' : 'none'"
-      ></mat-spinner>
+      <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
     </mat-card-content>
     <mat-card-actions>
       <button mat-raised-button (click)="login()" color="primary">Login</button>

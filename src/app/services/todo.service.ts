@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { Todo } from '../models/Todo';
+import { Todo } from '../models/todo.model';
 
 const httpOptions = {
   headers: new HttpHeaders({

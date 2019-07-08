@@ -23,3 +23,7 @@ body.overlay {
 .mat-card-header-text {
   margin: 0 !important; /* override 16px left/right margin */
 }
+
+#login-page .mat-form-field-infix {
+  width: 22rem !important;
+}
